@@ -1,7 +1,7 @@
 {
   "name": "deva",
   "proxy": "http://localhost:5000",
-  "homepage":"",
+  "homepage":"https://github.com/bhawesh2009/shreenath",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

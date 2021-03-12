@@ -23,13 +23,13 @@ const UserSchema = new mongoose.Schema({
   },
   verify: {
     type: Boolean,
-    default: false,
+    default: true,
   },
   password: {
     type: String,
     minlength: [8, "Password should be 8 character long"],
     required: [true, "Please add a password"],
-    select: false,
+    select: true,
   },
   role: {
     type: String,

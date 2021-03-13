@@ -3,17 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
- 
   "scripts": {
+   
     "start": "node app",
+    "build": "webpack" ,
     "server": "nodemon app",
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run app\" \"npm run client\"",
     "heroku-postbuild": "NPM_PRODUCTION=false cd frontend && npm install",
-  
     "data:import": "node seeder -i",
     "data:destroy": "node seeder -d"
   },
+  "heroku-run-build-script": true,
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -25,6 +26,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-fileupload": "^1.2.1",
+    "gh-pages": "^3.1.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.11.19",
     "node-cron": "^2.0.3"
@@ -36,5 +38,4 @@
   "engines": {
     "node": "10.x"
   }
-
 }

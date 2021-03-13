@@ -6,7 +6,7 @@
   "scripts": {
     "start": " node app.js",
     "dev": "node app",
-    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false cd client && npm install"
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=true cd client && npm install"
    
   },
   "heroku-run-build-script": true,

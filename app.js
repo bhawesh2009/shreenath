@@ -7,13 +7,11 @@ const cors = require("cors");
 const fileUpload = require("express-fileupload");
 const { unknownEndpoints, errorHandler } = require("./middleware/error");
 const connectDb = require("./config/db");
-
-dotenv.config({ path: "./config/.config.env" });
-
-connectDb();
 const app = express();
 
+dotenv.config({ path: "./config/config.env" });
 
+connectDb();
 
 //rouets
 const authRouter = require("./routes/auth");
@@ -44,13 +42,11 @@ app.get("/api/config/paypal", (req, res) =>
   res.send(process.env.PAYPAL_CLIENT_ID)
 );
 
-
-
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "/client/build")));
 
   app.get("*", (req, res) =>
-  res.sendFile(path.resolve(__dirname, "client", "build", "index.html"))
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"))
   );
 } else {
   app.get("/", (req, res) => {

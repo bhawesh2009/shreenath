@@ -9,7 +9,7 @@ const { unknownEndpoints, errorHandler } = require("./middleware/error");
 const connectDb = require("./config/db");
 const app = express();
 
-dotenv.config({ path: "./config/config.env" });
+dotenv.config({ path: "./config/.config.env" });
 
 connectDb();
 

@@ -6,7 +6,7 @@
   "scripts": {
     "start": "NODE_ENV=production node app.js",
     "dev": "node app",
-    "heroku-postbuild":   "NPM_PRODUCTION=false cd client && npm install",
+    "heroku-postbuild":"NPM_PRODUCTION=false cd client && npm install"
    
   },
   "heroku-run-build-script": true,

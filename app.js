@@ -46,7 +46,7 @@ app.get("/api/config/paypal", (req, res) =>
 
 
 
-if (process.env.NODE_ENV === "development") {
+if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "/frontend/public")));
 
   app.get("*", (req, res) =>

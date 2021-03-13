@@ -8,7 +8,7 @@
     "build": "webpack",
     "server": "nodemon app",
     "client": "npm start --prefix frontend",
-    "dev": "concurrently \"npm run app\" \"npm run client\"",
+    "dev": "concurrently \"npm run app\" \"npm run froy\"",
     "heroku-postbuild": "NPM_PRODUCTION=false cd frontend && npm install",
     "data:import": "node seeder -i",
     "data:destroy": "node seeder -d"
@@ -33,7 +33,8 @@
   },
   "devDependencies": {
     "concurrently": "^6.0.0",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "webpack-cli": "^4.5.0"
   },
   "engines": {
     "node": "10.x"

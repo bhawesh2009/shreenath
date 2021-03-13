@@ -8,7 +8,7 @@
     "server": "nodemon app",
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run app\" \"npm run froy\"",
-    "heroku-postbuild": "NPM_PRODUCTION=false cd frontend && npm install",
+    "heroku-postbuild": "NPM_PRODUCTION=false cd frontend --prefix frontend && npm install --prefix frontend && npm build --prefix frontend ",
     "data:import": "node seeder -i",
     "data:destroy": "node seeder -d"
   },

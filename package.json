@@ -6,10 +6,10 @@
   "scripts": {
     "start": " node app.js",
     "dev": "node app",
-    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false cd client && npm install"
+    "heroku-postbuild":"cd client && npm install && npm run build"
    
   },
-  "heroku-run-build-script": true,
+ 
   "author": "",
   "license": "ISC",
   "dependencies": {

@@ -1,5 +1,6 @@
 import { createStore, applyMiddleware, combineReducers } from "redux";
 import thunk from "redux-thunk";
+import { compose } from 'redux-devtools-extension'
 
 import {
   listProducts,
@@ -79,8 +80,14 @@ const initialState = {
     paymentMethod: paymentMethodAddressFromStorage,
   },
   userLogin: { userInfo: userInfoFromStorage },
+
+
+
 };
-const store = createStore(rootReducer, initialState, applyMiddleware(thunk));
+
+const store = createStore(rootReducer, initialState, 
+  compose (applyMiddleware(thunk)));
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 
 
 

@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/bhawesh2009/shreenath/static/css/main.d30f1edb.chunk.css",
-    "main.js": "/bhawesh2009/shreenath/static/js/main.b070992c.chunk.js",
-    "main.js.map": "/bhawesh2009/shreenath/static/js/main.b070992c.chunk.js.map",
-    "runtime-main.js": "/bhawesh2009/shreenath/static/js/runtime-main.a5b609d5.js",
-    "runtime-main.js.map": "/bhawesh2009/shreenath/static/js/runtime-main.a5b609d5.js.map",
-    "static/css/2.e5d8c2e2.chunk.css": "/bhawesh2009/shreenath/static/css/2.e5d8c2e2.chunk.css",
-    "static/js/2.84211745.chunk.js": "/bhawesh2009/shreenath/static/js/2.84211745.chunk.js",
-    "static/js/2.84211745.chunk.js.map": "/bhawesh2009/shreenath/static/js/2.84211745.chunk.js.map",
-    "index.html": "/bhawesh2009/shreenath/index.html",
-    "static/css/2.e5d8c2e2.chunk.css.map": "/bhawesh2009/shreenath/static/css/2.e5d8c2e2.chunk.css.map",
-    "static/css/main.d30f1edb.chunk.css.map": "/bhawesh2009/shreenath/static/css/main.d30f1edb.chunk.css.map",
-    "static/js/2.84211745.chunk.js.LICENSE.txt": "/bhawesh2009/shreenath/static/js/2.84211745.chunk.js.LICENSE.txt",
-    "static/media/confirmation.e4f6e647.png": "/bhawesh2009/shreenath/static/media/confirmation.e4f6e647.png"
+    "main.css": "/dry-sea-82820.git/static/css/main.d30f1edb.chunk.css",
+    "main.js": "/dry-sea-82820.git/static/js/main.1736848a.chunk.js",
+    "main.js.map": "/dry-sea-82820.git/static/js/main.1736848a.chunk.js.map",
+    "runtime-main.js": "/dry-sea-82820.git/static/js/runtime-main.1184174f.js",
+    "runtime-main.js.map": "/dry-sea-82820.git/static/js/runtime-main.1184174f.js.map",
+    "static/css/2.e5d8c2e2.chunk.css": "/dry-sea-82820.git/static/css/2.e5d8c2e2.chunk.css",
+    "static/js/2.84211745.chunk.js": "/dry-sea-82820.git/static/js/2.84211745.chunk.js",
+    "static/js/2.84211745.chunk.js.map": "/dry-sea-82820.git/static/js/2.84211745.chunk.js.map",
+    "index.html": "/dry-sea-82820.git/index.html",
+    "static/css/2.e5d8c2e2.chunk.css.map": "/dry-sea-82820.git/static/css/2.e5d8c2e2.chunk.css.map",
+    "static/css/main.d30f1edb.chunk.css.map": "/dry-sea-82820.git/static/css/main.d30f1edb.chunk.css.map",
+    "static/js/2.84211745.chunk.js.LICENSE.txt": "/dry-sea-82820.git/static/js/2.84211745.chunk.js.LICENSE.txt",
+    "static/media/confirmation.e4f6e647.png": "/dry-sea-82820.git/static/media/confirmation.e4f6e647.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.a5b609d5.js",
+    "static/js/runtime-main.1184174f.js",
     "static/css/2.e5d8c2e2.chunk.css",
     "static/js/2.84211745.chunk.js",
     "static/css/main.d30f1edb.chunk.css",
-    "static/js/main.b070992c.chunk.js"
+    "static/js/main.1736848a.chunk.js"
   ]
 }

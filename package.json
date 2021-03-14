@@ -4,9 +4,11 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "NODE_ENV=production node app.js",
-    "dev": "node app",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd client && npm install"
+    "start": "node app",
+    "server": "nodemon app",
+    "client": "BROWSER=none npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm i --prefix && npm run build --prefix client"
    
   },
  

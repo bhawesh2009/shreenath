@@ -1,7 +1,7 @@
 {
   "name": "deva",
   "proxy": "http://localhost:5000",
-  "homepage": "https://github.com/bhawesh2009/shreenath",
+  "homepage": "https://git.heroku.com/dry-sea-82820.git",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

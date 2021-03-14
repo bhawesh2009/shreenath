@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/bhawesh2009/shreenath/static/css/main.d30f1edb.chunk.css",
-    "main.js": "/bhawesh2009/shreenath/static/js/main.452e09da.chunk.js",
-    "main.js.map": "/bhawesh2009/shreenath/static/js/main.452e09da.chunk.js.map",
+    "main.js": "/bhawesh2009/shreenath/static/js/main.b070992c.chunk.js",
+    "main.js.map": "/bhawesh2009/shreenath/static/js/main.b070992c.chunk.js.map",
     "runtime-main.js": "/bhawesh2009/shreenath/static/js/runtime-main.a5b609d5.js",
     "runtime-main.js.map": "/bhawesh2009/shreenath/static/js/runtime-main.a5b609d5.js.map",
     "static/css/2.e5d8c2e2.chunk.css": "/bhawesh2009/shreenath/static/css/2.e5d8c2e2.chunk.css",
-    "static/js/2.c250cb4a.chunk.js": "/bhawesh2009/shreenath/static/js/2.c250cb4a.chunk.js",
-    "static/js/2.c250cb4a.chunk.js.map": "/bhawesh2009/shreenath/static/js/2.c250cb4a.chunk.js.map",
+    "static/js/2.84211745.chunk.js": "/bhawesh2009/shreenath/static/js/2.84211745.chunk.js",
+    "static/js/2.84211745.chunk.js.map": "/bhawesh2009/shreenath/static/js/2.84211745.chunk.js.map",
     "index.html": "/bhawesh2009/shreenath/index.html",
     "static/css/2.e5d8c2e2.chunk.css.map": "/bhawesh2009/shreenath/static/css/2.e5d8c2e2.chunk.css.map",
     "static/css/main.d30f1edb.chunk.css.map": "/bhawesh2009/shreenath/static/css/main.d30f1edb.chunk.css.map",
-    "static/js/2.c250cb4a.chunk.js.LICENSE.txt": "/bhawesh2009/shreenath/static/js/2.c250cb4a.chunk.js.LICENSE.txt",
+    "static/js/2.84211745.chunk.js.LICENSE.txt": "/bhawesh2009/shreenath/static/js/2.84211745.chunk.js.LICENSE.txt",
     "static/media/confirmation.e4f6e647.png": "/bhawesh2009/shreenath/static/media/confirmation.e4f6e647.png"
   },
   "entrypoints": [
     "static/js/runtime-main.a5b609d5.js",
     "static/css/2.e5d8c2e2.chunk.css",
-    "static/js/2.c250cb4a.chunk.js",
+    "static/js/2.84211745.chunk.js",
     "static/css/main.d30f1edb.chunk.css",
-    "static/js/main.452e09da.chunk.js"
+    "static/js/main.b070992c.chunk.js"
   ]
 }

@@ -1,5 +1,3 @@
+
 node_modules/
-client/build/
-data/reviews.json
-data/users.json
-config/config.env
+index.lock/

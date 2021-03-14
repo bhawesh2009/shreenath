@@ -4,9 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app",
-    "server": "nodemon app",
-    "client": "BROWSER=none npm start --prefix client",
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client": " npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm i --prefix && npm run build --prefix client"
    

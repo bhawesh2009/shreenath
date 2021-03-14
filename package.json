@@ -7,7 +7,7 @@
  "start": "node app.js",
 "start-watch": "nodemon app.js",
 "dev": "concurrently \"npm run start-watch\" \"cd client && npm start\"",
-"heroku-postbuild": "cd client && npm — production=false && npm run build"
+"heroku-postbuild": "cd client && NPM_production=false && npm run build"
    
   },
  

@@ -11,7 +11,7 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "data:import": "node seeder -i",
     "data:destroy": "node seeder -d",
-    "heroku-postbuild": "cd client && npm --production=false && npm run build"
+    "heroku-postbuild": "cd client && --production=false && npm run build"
    
   },
  

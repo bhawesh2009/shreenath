@@ -5,10 +5,11 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
+    "heroku-postbuild": "cd client && npm && npm run build",
     "server": "nodemon app.js",
     "client": " npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm i --prefix && npm run build --prefix client"
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  
    
   },
  

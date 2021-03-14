@@ -4,8 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+    "start": "NODE_ENV=production node app.js",
+    "dev": "node app",
+    "heroku-postbuild": "YARN_PRODUCTION=false cd client && yarn install"
   
    
   },

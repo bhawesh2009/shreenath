@@ -4,13 +4,14 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "heroku-postbuild": "cd client && npm --production=false && npm run build",
     "start": "NODE_ENV=production node app.js",
     "server": "nodemon app.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "data:import": "node seeder -i",
-    "data:destroy": "node seeder -d",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd client && npm install"
+    "data:destroy": "node seeder -d"
+   
   },
  
   "author": "",

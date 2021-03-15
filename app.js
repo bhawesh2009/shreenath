@@ -42,18 +42,22 @@ app.get("/api/config/paypal", (req, res) =>
   res.send(process.env.PAYPAL_CLIENT_ID)
 );
 
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static('client/build'));
-  app.get('*', (req, res) =>{
-    res.sendFile(path.resolve(__dirname , '../client', 'build',  'index.html'));
-  });
+const __dirname = path.resolve();
+app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
+
+
+if (process.env.NODE_ENV === 'PRODUCTION') {
+  app.use(express.static(path.join(__dirname, '/client/build')))
+
+  app.get('*', (req, res) => res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html')))
+} 
+
+else {
+  app.get('/', (req, res) => {
+    res.send('API running :)')
+  })
 }
- 
-  else {
-  app.get("/", (req, res) => {
-    res.send("API is running....");
-  });
-}
+
 
 app.use(unknownEndpoints);
 app.use(errorHandler);

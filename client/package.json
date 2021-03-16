@@ -1,11 +1,11 @@
 {
   "name": "deva",
   "proxy": "http://localhost:5000",
-  "homepage": "https://git.heroku.com/dry-sea-82820.git",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.8.1",
@@ -17,6 +17,7 @@
     "react-bootstrap": "^1.5.1",
     "react-confirm-alert": "^2.7.0",
     "react-dom": "^17.0.1",
+    "react-dropzone": "^11.3.1",
     "react-helmet": "^6.1.0",
     "react-loading-skeleton": "^2.2.0",
     "react-paypal-button-v2": "^2.6.3",
@@ -24,14 +25,13 @@
     "react-router-bootstrap": "^0.25.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-toastify": "^7.0.3",
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8",
     "redux-thunk": "^2.3.0",
     "web-vitals": "^1.1.0"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

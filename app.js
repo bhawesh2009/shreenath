@@ -1,6 +1,6 @@
 
 const dotenv = require("dotenv");
-const colors = require("colors");
+
 const express= require("express");
 const path = require("path");
 const cors = require("cors");
@@ -66,14 +66,14 @@ const PORT = process.env.PORT || 5000;
 const server = app.listen(
   PORT,
   console.log(
-    `Server running in ${process.env.NODE_ENV} mode on port ${PORT}`.yellow.bold
+    `Server running in ${process.env.NODE_ENV} mode on port ${PORT}`.yellow
   )
 );
 
 //Handle unhandle promise rejection
 
 process.on("unhandledRejection", (err, promise) => {
-  console.log(`Error: ${err.message}`.red.bold);
+  console.log(`Error: ${err.message}`.red);
   //close the server
   server.close(() => process.exit(1));
 });

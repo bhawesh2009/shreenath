@@ -108,7 +108,7 @@ const ProductDetails = ({ match, history }) => {
                     <Row>
                       <Col>Price:</Col>
                       <Col>
-                        <strong>Rs{product.price}</strong>
+                        <strong>RS{product.price}</strong>
                       </Col>
                     </Row>
                   </ListGroup.Item>

@@ -95,7 +95,7 @@ const ProductDetails = ({ match, history }) => {
                     } reviews`}
                   />
                 </ListGroup.Item>
-                <ListGroup.Item>Price: Rs{product.price}</ListGroup.Item>
+                <ListGroup.Item>Price: RS{product.price}</ListGroup.Item>
                 <ListGroup.Item>
                   Description: {product.description}
                 </ListGroup.Item>

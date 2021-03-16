@@ -1,6 +1,6 @@
 
 const dotenv = require("dotenv");
-
+const colors = require("colors");
 const express= require("express");
 const path = require("path");
 const cors = require("cors");
@@ -42,38 +42,34 @@ app.get("/api/config/paypal", (req, res) =>
   res.send(process.env.PAYPAL_CLIENT_ID)
 );
 
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('client/build'));
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "/client/build")));
 
-  app.get("*", (req, res) => {
-      res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
-
+  app.get("*", (req, res) =>
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"))
+  );
+} else {
+  app.get("/", (req, res) => {
+    res.send("API is running....");
   });
-} 
-
-else {
-  app.get('/', (req, res) => {
-    res.send('API running :)')
-  })
 }
-
 
 app.use(unknownEndpoints);
 app.use(errorHandler);
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
 const server = app.listen(
   PORT,
   console.log(
-    `Server running in ${process.env.NODE_ENV} mode on port ${PORT}`.yellow
+    `Server running in ${process.env.NODE_ENV} mode on port ${PORT}`.yellow.bold
   )
 );
 
 //Handle unhandle promise rejection
 
 process.on("unhandledRejection", (err, promise) => {
-  console.log(`Error: ${err.message}`.red);
+  console.log(`Error: ${err.message}`.red.bold);
   //close the server
   server.close(() => process.exit(1));
 });
